@@ -6,6 +6,14 @@ import prettierConfig from 'eslint-config-prettier'
 export default withNuxt(
   // Your custom configs here
   {
+    ignores: [
+      '.nuxt/**',
+      'node_modules/**',
+      'dist/**',
+      '.output/**',
+      '*.min.js',
+      '*.bundle.js',
+    ],
     plugins: {
       prettier: prettier,
     },

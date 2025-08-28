@@ -3,3 +3,32 @@
 @tailwind utilities;
 
 /* Global Custom Styles Go Here */
+
+/* Custom Font Families */
+@layer base {
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Figtree', sans-serif;
+  }
+
+  .font-display {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .font-body {
+    font-family: 'Figtree', sans-serif;
+  }
+}
+
+/* Remove margin from nuxt-icon svg */
+.nuxt-icon svg {
+  margin-bottom: 0 !important;
+}
